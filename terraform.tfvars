@@ -1,0 +1,5 @@
+resource_group_name = "813-d8d423d3-hands-on-with-terraform-on-azure"
+location            = "East US"
+vm_name             = "myterravmijhd"
+admin_username      = "azureadmingsabxhs"
+admin_password      = "P@ssw0rd123!hdbashxb"
