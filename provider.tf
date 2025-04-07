@@ -7,7 +7,7 @@ terraform {
   }
   required_version = ">= 1.3.0"
    backend "azurerm" {
-     sas_token = "sp=racwdli&st=2025-04-07T11:12:04Z&se=2025-04-07T19:12:04Z&spr=https&sv=2024-11-04&sr=c&sig=ehQ0xeqoHuyKnf3YsmdsaTYDIgutlq7eT7n2mOZNWq0%3D"
+     sas_token = var.AZURE_STORAGE_SAS_TOKEN
      storage_account_name = "storageforterraformgvsx"
      container_name = "state-data"
      key = "prodtest.terraform.tfstate"
