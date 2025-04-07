@@ -26,11 +26,6 @@ jobs:
         run: |
           az login --service-principal -u ${{ secrets.AZURE_CLIENT_ID }} -p ${{ secrets.AZURE_CLIENT_SECRET }} --tenant ${{ secrets.AZURE_TENANT_ID }}
       
-      - name: Azure Blob Storage SAS Token Setup
-        run: |
-          echo "Setting up SAS Token as an environment variable"
-        env:
-          AZURE_STORAGE_SAS_TOKEN: ${{ secrets.AZURE_STORAGE_SAS_TOKEN }}
 
       - name: Terraform Init
         run: terraform init
