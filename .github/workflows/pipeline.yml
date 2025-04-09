@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest  # GitHub-hosted runner
 
     environment:
-      name: terraformsecrets  # Optional: Environment to use for state locking and secrets
+      name: Terraform-deployment
     
     steps:
       - name: Checkout code
